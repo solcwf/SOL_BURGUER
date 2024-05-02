@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol Burguer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            background-color: #343a40; /* Cor cinza escuro chumbo */
+            color: #000; /* Cor do texto preto */
+        }
+
+        /* Estilos personalizados */
+        .card {
+            height: 100%;
+        }
+
+        .card-img-top {
+            height: 250px; /* Altura fixa para todas as imagens */
+            object-fit: cover; /* Garante que a imagem cubra o contêiner */
+        }
+
+        .card-body {
+            background-color: #fff; /* Fundo branco para a descrição */
+            color: #000; /* Texto preto */
+        }
+
+        /* Estilo para o botão de compra */
+        .btn-primary {
+            background-color: #8B4513; /* Cor marrom que combina com os lanches */
+            border-color: #8B4513; /* Cor da borda igual à cor do botão */
+        }
+
+        /* Efeito hover para o botão de compra */
+        .btn-primary:hover {
+            background-color: #A0522D; /* Cor marrom mais escura no hover */
+            border-color: #A0522D; /* Cor da borda no hover igual à cor do botão */
+        }
+
+         /* Estilo para o formulário de contato */
+         #contato{
+        background-color: #222;
+            color: #fff; /* Letras do formulário em branco */
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #222; /* Cor mais escura para o rodapé */
+            color: #fff; /* Cor do texto branco para contrastar */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sol Burguer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="http://127.0.0.1:5500/bootstrap%20pag%20promo/img/front-view-woman-eating-meat-burger.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="http://127.0.0.1:5500/bootstrap%20pag%20promo/img/front-view-woman-eating-meat-burgers.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="http://127.0.0.1:5500/bootstrap%20pag%20promo/img/front-view-burger-stand.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Seção de produtos -->
+    <section id="produtos" class="container mt-5">
+        <h2 class="text-center mb-4">Nossos produtos</h2>
+        <div class="row align-items-stretch">
+            <!-- Produto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./bootstrap pag promo/img/burger-with-fries (1).jpg" class="card-img-top" alt="Café Gourmet 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sol Gourmet</h5>
+                        <p class="card-text">Delicie-se com nosso suculento hambúrguer preparado com carne grelhada no ponto certo, queijo derretido, alface fresca e molho especial, acompanhado por batatas fritas crocantes.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./bootstrap pag promo/img/high-angle-burger-with-fries-table.jpg" class="card-img-top" alt="Café Gourmet 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Sol Gourmet 2</h5>
+                        <p class="card-text">Desfrute da excelência gastronômica com nosso hambúrguer gourmet, composto por carne selecionada, queijo premium, cebola caramelizada e molho exclusivo.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./bootstrap pag promo/img/cheeseburguer-gourmet-grelhado-em-mesa-de-madeira-rustica-gerada-por-ia.jpg" class="card-img-top" alt="Café Gourmet 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sol Gourmet 3</h5>
+                        <p class="card-text">Experimente o nosso cheeseburger artesanal, preparado com ingredientes frescos e de alta qualidade, incluindo carne suculenta, queijo especial, bacon crocante e acompanhamentos frescos.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Seção de contato -->
+ <section id="contato" class="bg-dark py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contate-nos</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Rodapé -->
+    <footer class="bg-black text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Sol Burguer. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

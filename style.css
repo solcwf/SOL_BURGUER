@@ -1,0 +1,43 @@
+    body {
+        background-color: #343a40;
+        color: white;
+
+    }
+
+
+    .carousel-item {
+        height: 80vh;
+
+        background-size: cover;
+        background-position: center;
+        background-color: #343a40;
+
+        color: #fff;
+
+    }
+
+
+    #produtos {
+        background-color: #3c3f42;
+
+        color: #ffffff;
+
+        padding: 90px 0;
+
+    }
+
+    .card {
+        color: black;
+    }
+
+    #contato {
+        background-color: #222528;
+         color: #fff;
+
+    }
+    footer {
+        background-color: #000000; /* Cor quase preta */
+        color: #fff; /* Cor do texto branco para contrastar */
+    }
+
+    
